@@ -1,0 +1,6 @@
+jira
+PyYAML
+plotly
+stashy
+python-dateutil
+numpy
