@@ -1,10 +1,14 @@
+try:
+    import unzip_requirements
+except ImportError:
+    pass
+
 from datetime import datetime, timedelta
 import numpy as np
 import plotly.figure_factory as ff
 import plotly.graph_objs as go
 import plotly.plotly as py
 import yaml
-
 
 
 def config():
@@ -14,9 +18,10 @@ def config():
         except yaml.YAMLError as exc:
             print(exc)
 
+
 def publish(event, context):
     c = config()['plotly_auth']
-    py.sign_in(username=c['username'],api_key=c['api_key'])
+    py.sign_in(username=c['username'], api_key=c['api_key'])
 
     # borrowed from here: https://plot.ly/numpy/array/
 

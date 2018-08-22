@@ -6,8 +6,6 @@
     "serverless-plugin-include-dependencies": "^3.1.0"
   },
   "devDependencies": {
-    "serverless-domain-manager": "^2.6.0",
-    "serverless-pseudo-parameters": "^2.1.0",
     "serverless-python-requirements": "^4.1.1"
   },
   "main": "index.js",
